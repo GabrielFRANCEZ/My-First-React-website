@@ -1,21 +1,22 @@
 import React, {Component} from 'react';
+import Header from '../Common/Header';
+import image from '../assets/img/header.png';
 
 class Home extends Component
 {
     render ()
     {
         return(
-            <div>
-                 <header className="masthead">
-                    <div className="container">
-                        <div className="intro-text">
-                            <div className="intro-lead-in">Welcome To Our Studio!</div>
-                            <div className="intro-heading text-uppercase">It's Nice To Meet You</div>
-                            <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
-                        </div>
-                    </div>
-                </header> 
-            </div>
+         <div>
+             <Header 
+                title = "Learning a complete Full-Stack JS course"
+                subtitle = "Gabriel Francez"
+                buttonText = "Tell me more"
+                link="/services"
+                showButton={true}
+                image={image}
+             />
+         </div>
 
         );
     }
